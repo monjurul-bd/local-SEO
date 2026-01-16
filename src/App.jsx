@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronDown, ChevronUp, PlayCircle, Lock, BookOpen, User, Star, Globe, Zap, Users, Trophy, CheckCircle, MessageCircle, Monitor, Bell, X } from 'lucide-react';
-
+import { Helmet } from 'react-helmet-async'; // শুরুতে ইমপোর্ট করুন
 // --- DATA: Stats ---
 const stats = [
   { id: 1, label: "Students Trained", value: "1,000+", icon: <Users className="text-orange-500" /> },
@@ -79,7 +79,18 @@ const App = () => {
 
   return (
     <div className="relative min-h-screen text-gray-200 selection:bg-orange-500 selection:text-white">
+      <Helmet>
+      <title>Local SEO Master Course | Rank #1 on Google Maps | Monjurul Haque</title>
+      <meta name="description" content="Learn Local SEO in Bangla. Complete course on Google Business Profile, Map Ranking, and SEO Tools by Monjurul Haque. Enroll now for lifetime access." />
+      <meta name="keywords" content="Local SEO Course, Google Map Ranking, SEO Training in Bangla, SEO Master Class, Monjurul Haque, SEO Tutorial" />
       
+      {/* Social Media (Facebook/LinkedIn) Preview Tags */}
+      <meta property="og:title" content="Local SEO Master Course - Become an Expert" />
+      <meta property="og:description" content="Join 1000+ students. Learn how to rank any business on Google Maps. Fully Online Course." />
+      <meta property="og:image" content="https://images.unsplash.com/photo-1572021335469-31706a17aaef?auto=format&fit=crop&q=80" />
+      <meta property="og:url" content="https://local-seo-training.netlify.app/" />
+      <meta property="og:type" content="website" />
+    </Helmet>
       {/* --- Background Elements --- */}
       <div className="cyber-grid-bg"></div>
       <div className="ambient-glow top-0 left-0"></div>

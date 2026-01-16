@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://local-seo-training.netlify.app/sitemap.xml
